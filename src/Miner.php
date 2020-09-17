@@ -6,7 +6,7 @@ class Miner
 {
     protected function getRealIP()
     {
-        return $_SERVER["HTTP_X_REAL_IP"];
+        return $_SERVER["REMOTE_ADDR"];
     }
 
     public static function Current()
