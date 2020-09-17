@@ -17,15 +17,15 @@ services:
     links:
       - bfmsql
     environment:
-      - DB_HOSTNAME=bfmsql
-      - DB_USERNAME=root
-      - DB_PASSWORD=banana
-      - DB_DATABASE=part1dumper
+      - DB_HOSTNAME=HOST
+      - DB_USERNAME=USERNAME
+      - DB_PASSWORD=PASSWORD
+      - DB_DATABASE=DATABASE
   bfmsql:
     container_name: flask_mysql
     restart: always
     image: mysql:5.6
     environment:
-      MYSQL_ROOT_PASSWORD: 'banana'
+      MYSQL_ROOT_PASSWORD: 'PASSWORD'
     volumes:
       - ./mysql-data:/var/lib/mysql

@@ -2,3 +2,6 @@
 composer.lock
 config.yml
 .DS_Store
+config.yml
+config.dist.yml
+docker/docker-compose.yml
