@@ -181,7 +181,7 @@ class HomeController extends BaseController
                 if (!FriendCode::IsValid($friendcode)) {
                     echo json_encode(array(
                         'success' => false,
-                        'message' => 'Success.',
+                        'message' => 'The friendcode you provided does not seem valid.',
                     ));
                     die;
                 }
