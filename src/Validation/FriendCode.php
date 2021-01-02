@@ -18,7 +18,7 @@ class FriendCode
     public static function IsValid($friendCode)
     {
         $friendCode = preg_replace("/[^0-9]/", "", $friendCode);
-        if (strlen($friendCode) !== 12) {
+        if (strlen($friendCode) > 12) {
             return false;
         }
 
