@@ -10,6 +10,23 @@
         .form-control::-webkit-input-placeholder, .form-control::-moz-placeholder, .form-control:-ms-input-placeholder, .form-control:-moz-placeholder, .form-control::placeholder, .form-control:placeholder, .form-control::placeholder {
             color: lightgrey !important;
         }
+		.danger-flash {
+		animation: glowing 1300ms infinite;
+		}
+		@keyframes glowing {
+        0% {
+          background-color: #ee5f5b;
+          box-shadow: 0 0 5px #ee5f5b;
+        }
+        50% {
+          background-color: #ffbebd;
+          box-shadow: 0 0 20px #ffbebd;
+        }
+        100% {
+          background-color: #ee5f5b;
+          box-shadow: 0 0 5px #ee5f5b;
+        }
+      }
     </style>
     <meta name="theme-color" content="#2a9fd6" />
 	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATeu0AAa/fwAX45wAh/XOAK2c/wCMe/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIiIiIAACMzMzMzMyACQRERERETMgJBEREREREyAkERERERETICQRERERERMgJBEREREREyAkEREAARETICRVEBEQFVMgJFUREREVUyAkABEiIRADICQAEgACEAMgJERCAAIREyACIiAGACIiAAAAAGZgAAAAAAAAYGAAAADABwAAgAMAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAOBAAADgQAAhsMAAPx/AAD9fwAA" rel="icon" type="image/x-icon" />
