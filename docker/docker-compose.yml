@@ -11,7 +11,7 @@ services:
     volumes:
       - "../config.yml:/var/www/html/config.yml"
   part1dumper:
-    image: bruteforcemovable/part1dumperbackend:latest
+    image: eip618/part1dumperbackend:latest
     ports:
       - 8081:80
     links:
